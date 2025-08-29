@@ -1,4 +1,5 @@
 import { useState } from "react";
+import JoinButton from "../Utils/JoinButton";
 
 const tabs = [
   { id: "Golf gear", label: "Golf gear" },
@@ -27,12 +28,7 @@ function Hero() {
         </p>
 
         <div className="absolute bottom-30 flex gap-5 sm:bottom-20">
-          <button className="flex items-center gap-2 rounded-full bg-neutral-900 p-2 text-white">
-            Join our team
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-lime-200">
-              &rarr;
-            </span>
-          </button>
+          <JoinButton />
           <button className="rounded-full border-b-1 border-l-1 border-teal-50 bg-white/20 p-2 px-9 text-white shadow-md backdrop-blur-md">
             Discover
           </button>
