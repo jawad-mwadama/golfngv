@@ -44,7 +44,7 @@ function Hero() {
 function Tab() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   return (
-    <div className="absolute right-0 bottom-30 grid grid-cols-3 gap-2 sm:bottom-20">
+    <div className="absolute right-6 bottom-30 hidden gap-2 sm:bottom-20 sm:grid sm:grid-cols-3">
       {tabs.map((tab) => (
         <button
           key={tab.id}

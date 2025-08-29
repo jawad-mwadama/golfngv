@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav className="rounded-4xl absolute left-1/2 top-4 z-10 w-[90%] max-w-7xl -translate-x-1/2 transform bg-white/20 shadow-md backdrop-blur-md">
+    <nav className="absolute top-4 left-1/2 z-10 w-[90%] max-w-7xl -translate-x-1/2 transform rounded-4xl bg-white/20 shadow-md backdrop-blur-md">
       <div className="flex items-center justify-between p-2">
         <img src="/images/golfngvlogo.png" className="size-12" alt="Logo" />
         <ul className="hidden gap-6 font-medium text-black md:flex">
@@ -10,7 +10,7 @@ function Navbar() {
           <li>Resources</li>
           <li>Contact</li>
         </ul>
-        <button className="hidden rounded-full bg-black px-4 py-1 text-white md:block">
+        <button className="hidden rounded-full bg-black px-4 py-1 text-white duration-500 hover:bg-lime-200 hover:text-black hover:ease-in-out md:block">
           Join Now
         </button>
       </div>
