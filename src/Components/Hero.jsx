@@ -1,5 +1,6 @@
 import { useState } from "react";
 import JoinButton from "../Utils/JoinButton";
+import DiscoverButton from "../Utils/DiscoverButton";
 
 const tabs = [
   { id: "Golf gear", label: "Golf gear" },
@@ -29,9 +30,7 @@ function Hero() {
 
         <div className="absolute bottom-30 flex gap-5 sm:bottom-20">
           <JoinButton />
-          <button className="rounded-full border-b-1 border-l-1 border-teal-50 bg-white/20 p-2 px-9 text-white shadow-md backdrop-blur-md">
-            Discover
-          </button>
+          <DiscoverButton />
         </div>
       </div>
 
@@ -44,7 +43,7 @@ function Hero() {
 function Tab() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   return (
-    <div className="absolute right-6 bottom-30 hidden gap-2 sm:bottom-20 sm:grid sm:grid-cols-3">
+    <div className="absolute right-6 hidden gap-2 md:bottom-20 md:grid md:grid-cols-3">
       {tabs.map((tab) => (
         <button
           key={tab.id}

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import JoinButton from "../Utils/JoinButton";
+import DiscoverButton from "../Utils/DiscoverButton";
 
 const navLinks = [
   { id: "our story", label: "Our Story" },
@@ -10,9 +12,9 @@ function OurStory() {
   return (
     <>
       <div className="p-3 sm:p-9">
-        <div className="pt-9">
+        <div className="pt-6 sm:pt-9">
           <Links />
-          <div className="flex content-center justify-between pt-6">
+          <div className="flex flex-col content-center justify-between pt-6 sm:flex-row">
             <h3 className="text-3xl font-medium tracking-wide">
               A Premier Golfing <br /> Destination
             </h3>
@@ -23,43 +25,50 @@ function OurStory() {
           </div>
         </div>
       </div>
-      // start of bento grid section
-      <div className="grid h-[500px] grid-cols-2 gap-4">
-        {/* <!-- Large Div (left side) --> */}
-        <div
-          className="relative col-span-1 row-span-2 bg-cover bg-center"
-          // style="background-image: url('https://via.placeholder.com/600x500');"
-        >
-          <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-            <h2 className="text-2xl font-bold text-white">
-              Large Text Over Image
+      {/* start of bento section */}
+      <Bento />
+    </>
+  );
+}
+
+function Bento() {
+  return (
+    <div className="p-3 sm:p-9">
+      <div className="mx-auto grid h-[500px] grid-cols-1 gap-4 sm:grid-cols-2 sm:grid-rows-2">
+        {/* left square */}
+        <div className="relative col-span-1 row-span-2 overflow-hidden rounded-3xl bg-[url('/images/young-man-holding-golf-club.jpg')] mask-t-from-90% bg-cover bg-center">
+          <div className="absolute bottom-0 w-full p-1 sm:p-3">
+            <h2 className="text-2xl font-semibold text-white">
+              Unwind, Play, and <br /> Perfect Your Swing
             </h2>
-          </div>
-        </div>
-
-        {/* <!-- Top Right Div --> */}
-        <div
-          className="relative bg-cover bg-center"
-          // style="background-image: url('https://via.placeholder.com/300x250');"
-        >
-          <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-            <p className="text-lg font-semibold text-white">Top Right Text</p>
-          </div>
-        </div>
-
-        {/* <!-- Bottom Right Div --> */}
-        <div
-          className="relative bg-cover bg-center"
-          // style="background-image: url('https://via.placeholder.com/300x250');"
-        >
-          <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-            <p className="text-lg font-semibold text-white">
-              Bottom Right Text
+            <p className="font-light tracking-tight text-white">
+              A championship experience awaits you on lush, world-class <br />
+              fairways. Your next legendary round starts here.
             </p>
+            <div className="pt-3 pb-3 sm:pt-6">
+              <DiscoverButton />
+            </div>
+          </div>
+        </div>
+        {/* two rectangles */}
+        <div className="relative overflow-hidden rounded-3xl bg-[url('/images/professional-golfer-bali-indonesia.jpg')] bg-cover bg-center"></div>
+        {/* rectangle 2 */}
+        <div className="relative flex items-end">
+          <div className="">
+            <p>
+              Established in <span className="text-lime-200">1996</span>,pine
+              ridge golf club spans over
+              <span className="text-lime-200">150</span>
+              acres of rolling hills,mature trees and breathtaking water
+              features.
+            </p>
+            <div className="sm:pt-6">
+              <JoinButton />
+            </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
