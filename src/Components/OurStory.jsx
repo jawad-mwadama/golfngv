@@ -56,9 +56,9 @@ function Bento() {
         <div className="relative flex items-end">
           <div className="">
             <p>
-              Established in <span className="text-lime-200">1996</span>,pine
+              Established in <span className="text-lime-300">1996</span>,pine
               ridge golf club spans over
-              <span className="text-lime-200">150</span>
+              <span className="text-lime-300"> 150 </span>
               acres of rolling hills,mature trees and breathtaking water
               features.
             </p>
@@ -81,7 +81,7 @@ function Links() {
         <button
           key={link.id}
           onClick={() => setTabLink(link.id)}
-          className={`${tabLink === link.id ? "rounded-full bg-lime-200 p-2 text-black" : "rounded-full bg-gray-200 p-1.5 text-zinc-400"} font-semibold`}
+          className={`${tabLink === link.id ? "rounded-full bg-lime-300 p-2 text-black" : "rounded-full bg-gray-200 p-1.5 text-zinc-400"} font-semibold`}
         >
           {link.label}
         </button>
