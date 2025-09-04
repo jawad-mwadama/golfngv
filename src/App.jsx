@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import OurStory from "./Components/OurStory";
 import Academy from "./Components/Academy";
+import QualityGolf from "./Components/QualityGolf";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <OurStory />
       <Academy />
+      <QualityGolf />
     </div>
   );
 }

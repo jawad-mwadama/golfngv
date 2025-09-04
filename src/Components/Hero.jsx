@@ -12,7 +12,7 @@ const tabs = [
 
 function Hero() {
   return (
-    <div className="relative flex h-[97vh] flex-wrap justify-between rounded-3xl bg-[url('/images/man-having-game-golf-outdoors.jpg')] mask-b-from-80% mask-b-to-100% bg-cover bg-center bg-no-repeat p-3 sm:p-9">
+    <div className="relative flex h-screen flex-wrap justify-between rounded-3xl bg-[url('/images/scene-with-friends-golf-course.jpg')] mask-b-from-80% mask-b-to-100% bg-cover bg-center bg-no-repeat p-3 sm:p-9">
       <div>
         {/* changed the bottom and top, come bakc to it if there are issues */}
         <p className="absolute bottom-[60%] space-y-1 rounded-full bg-lime-200 p-1.5 font-light text-zinc-400 sm:bottom-[55%] sm:font-medium">

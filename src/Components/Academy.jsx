@@ -19,4 +19,6 @@ function Academy() {
   );
 }
 
+// space left for other bento grid
+
 export default Academy;
