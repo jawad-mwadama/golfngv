@@ -6,7 +6,7 @@ function Academy() {
       <div className="mx-auto flex flex-col items-center justify-center p-9 sm:p-6">
         <p className="text-sm font-semibold text-lime-300">Gold Academy</p>
 
-        <h2 className="pt-3 text-4xl font-semibold tracking-wide">
+        <h2 className="pt-3 text-4xl font-semibold">
           Professional Coaching & Golf Academy
         </h2>
 

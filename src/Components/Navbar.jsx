@@ -10,7 +10,7 @@ function Navbar() {
           <li>Resources</li>
           <li>Contact</li>
         </ul>
-        <button className="hidden rounded-full bg-black px-4 py-1 text-white duration-500 hover:bg-lime-200 hover:text-black hover:ease-in-out md:block">
+        <button className="hidden rounded-full bg-black px-4 py-1 text-white duration-500 hover:bg-lime-300 hover:text-black hover:ease-in-out md:block">
           Join Now
         </button>
       </div>
