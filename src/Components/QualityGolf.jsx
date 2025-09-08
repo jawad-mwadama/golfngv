@@ -4,7 +4,7 @@ import BookNow from "../Utils/BookNowButton";
 function QualityGolf() {
   return (
     <div className="p-3 sm:p-9">
-      <div className="flex justify-between pt-6 sm:pt-9">
+      <div className="mx-auto flex-wrap justify-between pt-6 sm:flex sm:pt-9">
         <div className="max-w-lg pt-3">
           <h2 className="text-6xl font-semibold">
             Quality Course,
