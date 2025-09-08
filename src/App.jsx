@@ -5,6 +5,7 @@ import OurStory from "./Components/OurStory";
 import Academy from "./Components/Academy";
 import QualityGolf from "./Components/QualityGolf";
 import Control from "./Components/Control";
+import Faq from "./Components/Faq";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Academy />
       <QualityGolf />
       <Control />
+      <Faq />
     </div>
   );
 }
