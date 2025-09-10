@@ -31,7 +31,7 @@ function Faq() {
   return (
     <div className="p-3 sm:p-9">
       <div className="mx-auto flex flex-col items-center justify-center p-9 text-center sm:p-6">
-        <h2 className="pt-3 text-4xl font-semibold">
+        <h2 className="pt-3 text-3xl font-semibold sm:text-4xl">
           Frequently Asked Questions
         </h2>
 
@@ -68,9 +68,9 @@ function Accordion({ faqs }) {
 
 function AccordionItem({ title, isOpen, onToggle, children }) {
   return (
-    <div className="mx-auto w-full p-9 text-start sm:w-3xl">
+    <div className="mx-auto w-full p-1.5 text-start sm:w-3xl sm:p-9">
       <div
-        className={`rounded-2xl bg-zinc-100 p-9 shadow-xl ${
+        className={`rounded-2xl bg-zinc-100 p-4 shadow-xl sm:p-9 ${
           isOpen ? "border-2 border-lime-300" : ""
         }`}
       >

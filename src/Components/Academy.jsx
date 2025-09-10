@@ -3,10 +3,10 @@ import React from "react";
 function Academy() {
   return (
     <div className="pt-6 sm:pt-9">
-      <div className="mx-auto flex flex-col items-center justify-center p-9 text-center sm:p-6">
+      <div className="mx-auto flex flex-col items-center justify-center p-9 text-center sm:p-4">
         <p className="text-sm font-semibold text-lime-300">Gold Academy</p>
 
-        <h2 className="pt-3 text-4xl font-semibold">
+        <h2 className="pt-3 text-3xl font-semibold sm:text-4xl">
           Professional Coaching & Golf Academy
         </h2>
 

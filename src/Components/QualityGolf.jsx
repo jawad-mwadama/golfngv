@@ -6,7 +6,7 @@ function QualityGolf() {
     <div className="p-3 sm:p-9">
       <div className="mx-auto flex-wrap justify-between pt-6 sm:flex sm:pt-9">
         <div className="max-w-lg pt-3">
-          <h2 className="text-6xl font-semibold">
+          <h2 className="text-3xl font-semibold sm:text-6xl">
             Quality Course,
             <br />
             Confident Ball
