@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children, useState } from "react";
 
 const faqs = [
   {
@@ -44,11 +44,21 @@ function Faq() {
   );
 }
 
-function Accordion() {
+function Accordion({ faqs }) {
+  const [isOpen, setIsopen] = useState(null);
+  const handleToggle = (index) => {
+    setIsopen(isOpen === index ? null : index);
+  };
   return (
-    <div className="grid grid-cols-2 grid-rows-3 bg-stone-100">
-      {faqs.map((el) => (
-        <AccordionItem title={el.title} key={el.title}>
+    <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-3">
+      {faqs.map((el, index) => (
+        <AccordionItem
+          title={el.title}
+          key={el.title}
+          isOpen={isOpen === index}
+          setIsopen={setIsopen}
+          onToggle={() => handleToggle(index)}
+        >
           {el.text}
         </AccordionItem>
       ))}
@@ -56,13 +66,32 @@ function Accordion() {
   );
 }
 
-function AccordionItem({ title }) {
+function AccordionItem({ title, isOpen, onToggle, children }) {
   return (
-    <div className="flex items-center justify-center gap-4">
-      <div className="text-start">
-        <p className="">{title}</p>
+    <div className="mx-auto w-full p-9 text-start sm:w-3xl">
+      <div
+        className={`rounded-2xl bg-zinc-100 p-9 shadow-xl ${
+          isOpen ? "border-2 border-lime-300" : ""
+        }`}
+      >
+        {/* Header (clickable) */}
+        <div
+          className="flex cursor-pointer items-center justify-between"
+          onClick={onToggle}
+        >
+          <p className="font-semibold">{title}</p>
+          <p className="rounded-xl bg-lime-300 px-3 py-1.5 text-white">
+            {isOpen ? "-" : "+"}
+          </p>
+        </div>
+
+        {/* Content below the header */}
+        {isOpen && (
+          <div className="mt-4 text-sm break-words text-zinc-700">
+            {children}
+          </div>
+        )}
       </div>
-      <p></p>
     </div>
   );
 }
