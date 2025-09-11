@@ -15,7 +15,7 @@ function Hero() {
     <div className="relative flex h-screen flex-wrap justify-between rounded-3xl bg-[url('/images/scene-with-friends-golf-course.jpg')] mask-b-from-80% mask-b-to-100% bg-cover bg-center bg-no-repeat p-3 sm:p-9">
       <div className="">
         {/* changed the bottom and top, come bakc to it if there are issues */}
-        <p className="absolute bottom-[45%] space-y-1 rounded-full bg-lime-200 p-1.5 font-light text-zinc-400 sm:bottom-[47%] sm:font-medium">
+        <p className="absolute bottom-[45%] space-y-1 rounded-full bg-lime-200 p-1.5 text-sm font-light text-zinc-400 sm:bottom-[50%] sm:font-medium">
           Version 2.0 is here
           <span className="px-2 text-xs text-black">Read Here &rarr;</span>
         </p>

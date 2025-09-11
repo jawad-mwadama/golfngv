@@ -36,33 +36,23 @@ function Bento() {
     <div className="p-3 sm:p-9">
       <div className="mx-auto grid h-[500px] grid-cols-1 gap-4 sm:grid-cols-2 sm:grid-rows-2">
         {/* left square */}
-        <div className="relative col-span-1 row-span-2 overflow-hidden rounded-3xl bg-[url('/images/young-man-holding-golf-club.jpg')] mask-t-from-90% bg-cover bg-center">
-          <div className="absolute bottom-0 w-full p-1 sm:p-3">
-            <h2 className="text-2xl font-semibold text-white">
-              Unwind, Play, and <br /> Perfect Your Swing
-            </h2>
-            <p className="font-light tracking-tight text-white">
-              A championship experience awaits you on lush, world-class <br />
-              fairways. Your next legendary round starts here.
-            </p>
-            <div className="pt-3 pb-3 sm:pt-6">
-              <DiscoverButton />
-            </div>
-          </div>
-        </div>
+        <div className="col-span-1 row-span-2 overflow-hidden rounded-3xl bg-[url('/images/young-man-holding-golf-club.jpg')] mask-t-from-90% bg-cover bg-center"></div>
         {/* two rectangles */}
-        <div className="relative overflow-hidden rounded-3xl bg-[url('/images/professional-golfer-bali-indonesia.jpg')] bg-cover bg-center"></div>
+        <div className="overflow-hidden rounded-3xl bg-[url('/images/professional-golfer-bali-indonesia.jpg')] bg-cover bg-center"></div>
         {/* rectangle 2 */}
         <div className="relative flex items-end">
           <div className="">
-            <p>
+            <p className="pb-7">
               Established in <span className="text-lime-300">1996</span>,pine
               ridge golf club spans over
               <span className="text-lime-300"> 150 </span>
               acres of rolling hills,mature trees and breathtaking water
-              features.
+              features.Designed for golfers of all levels, it offers a
+              challenging yet enjoyable experience amidst a serene natural
+              setting. More than just a course, it’s a welcoming community where
+              members enjoy world-class amenities and year-round events.
             </p>
-            <div className="sm:pt-6">
+            <div className="pt-3 sm:pt-6">
               <JoinButton />
             </div>
           </div>

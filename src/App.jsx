@@ -11,7 +11,7 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
-      <div className="relative m-3 bg-neutral-50">
+      <div className="relative m-3 overflow-hidden bg-neutral-50">
         <Navbar />
         <Hero />
         <OurStory />
